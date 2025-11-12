@@ -35,7 +35,7 @@ jobs:
         run: python evaluate.py --model model_v${{ github.run_number }}.pkl
 
       - name: Quality Gate
-        run: python Quality_Gate.py --threshold 0.80
+        run: python Quality_gate.py --threshold 0.80
 
       - name: Upload model artifact
         uses: actions/upload-artifact@v4
